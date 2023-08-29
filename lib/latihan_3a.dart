@@ -7,15 +7,13 @@ void main() {
 class MyAppTest extends StatelessWidget {
   // const MyAppTest({super.key});
 
-  List<Widget> myList = [
+  final List<Widget> myList = [
     Container(
       height: 300,
       width: 300,
       color: Colors.red,
     ),
-    Text(
-      'Halo',
-    ),
+    Text('Halo'),
     Container(
       height: 300,
       width: 300,
