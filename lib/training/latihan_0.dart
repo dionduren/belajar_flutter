@@ -1,5 +1,6 @@
 class Mamalia {
   void menyusui() {
+    // ignore: avoid_print
     print('Bisa Menyusui.....');
   }
 }
@@ -29,7 +30,7 @@ void main() {
 
   print(tambah(11, 25));
 
-  var orang1 = new Orang(name: 'Dion', age: 29);
+  var orang1 = Orang(name: 'Dion', age: 29);
   print(orang1.name);
   print(orang1.age);
   orang1.menyusui();
@@ -37,5 +38,6 @@ void main() {
 
   var orang2 = Orang(name: 'Andrew', age: 30);
   print(orang2.name);
+  // ignore: avoid_print
   print(orang2.age);
 }

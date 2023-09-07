@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyAppTest());
+  runApp(const MyAppTest());
 }
 
 class MyAppTest extends StatelessWidget {
@@ -12,25 +12,25 @@ class MyAppTest extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('List Tile'),
+          title: const Text('List Tile'),
         ),
         body: ListView(
           children: [
             ListTile(
-              contentPadding: EdgeInsets.only(right: 50),
-              title: Text('Dion Alamsah'),
-              subtitle: Text('This is subtitle part'),
-              leading: CircleAvatar(),
-              trailing: Text('10:00 PM'),
+              contentPadding: const EdgeInsets.only(right: 50),
+              title: const Text('Dion Alamsah'),
+              subtitle: const Text('This is subtitle part'),
+              leading: const CircleAvatar(),
+              trailing: const Text('10:00 PM'),
               tileColor: Colors.amber,
               onTap: () {
                 return; // pindah halaman
               },
             ),
-            Divider(
+            const Divider(
               color: Colors.black,
             ),
-            ListTile(
+            const ListTile(
               contentPadding:
                   EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               title: Text('Dion Alamsah'),
@@ -43,26 +43,26 @@ class MyAppTest extends StatelessWidget {
               trailing: Text('10:00 PM'),
               dense: true,
             ),
-            Divider(
+            const Divider(
               color: Colors.black,
             ),
-            ListTile(
+            const ListTile(
               contentPadding: EdgeInsets.all(50),
               title: Text('Dion Alamsah'),
               subtitle: Text('This is subtitle part'),
               leading: CircleAvatar(),
               trailing: Text('10:00 PM'),
             ),
-            Divider(
+            const Divider(
               color: Colors.black,
             ),
-            ListTile(
+            const ListTile(
               title: Text('Dion Alamsah'),
               subtitle: Text('This is subtitle part'),
               leading: CircleAvatar(),
               trailing: Text('10:00 PM'),
             ),
-            Divider(
+            const Divider(
               color: Colors.black,
             ),
           ],

@@ -13,17 +13,19 @@ class MyAppTest extends StatelessWidget {
     Colors.amber
   ];
 
+  MyAppTest({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("List View"),
+          title: const Text("List View"),
         ),
         body: ListView.separated(
             separatorBuilder: (context, index) {
-              return Divider(
+              return const Divider(
                 color: Colors.black,
               );
               // return Container(

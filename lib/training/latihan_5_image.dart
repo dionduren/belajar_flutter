@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyAppTest());
+  runApp(const MyAppTest());
 }
 
 class MyAppTest extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyAppTest extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Image Widget"),
+          title: const Text("Image Widget"),
         ),
         body: Center(
           child: Container(

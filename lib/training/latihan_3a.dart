@@ -13,7 +13,7 @@ class MyAppTest extends StatelessWidget {
       width: 300,
       color: Colors.red,
     ),
-    Text('Halo'),
+    const Text('Halo'),
     Container(
       height: 300,
       width: 300,
@@ -31,13 +31,15 @@ class MyAppTest extends StatelessWidget {
     ),
   ];
 
+  MyAppTest({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("List View"),
+          title: const Text("List View"),
         ),
         body: ListView(
             //scrollDirection: Axis.horizontal,

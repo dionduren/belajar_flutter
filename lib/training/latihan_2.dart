@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 main() {
-  runApp(MyAppTest());
+  runApp(const MyAppTest());
 }
 
 class MyAppTest extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyAppTest extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("visibleNonVisible"),
+          title: const Text("visibleNonVisible"),
           centerTitle: true,
         ),
         body: Column(

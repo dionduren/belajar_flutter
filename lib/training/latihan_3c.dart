@@ -23,13 +23,15 @@ class MyAppTest extends StatelessWidget {
     ),
   );
 
+  MyAppTest({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("List View"),
+          title: const Text("List View"),
         ),
         body: ListView(
           children: myNumber,

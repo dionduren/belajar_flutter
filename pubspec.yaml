@@ -69,7 +69,7 @@ flutter:
   # example:
   fonts:
     - family: Inter
-    - fonts:
+      fonts:
         - asset: fonts/Inter.ttf
         # - asset: fonts/static/Inter-Black.ttf
         #   style: Black
