@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:belajar_flutter/pages/MainHome.dart';
 
 void main() {
   // ignore: prefer_const_constructors
@@ -33,52 +34,7 @@ class MyAppTest extends StatelessWidget {
         primarySwatch: Colors.amber,
         fontFamily: 'Inter',
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Row(
-            children: [
-              Icon(Icons.menu, color: Colors.black),
-              SizedBox(width: 10),
-              Text("Halaman Utama", selectionColor: Colors.black)
-            ],
-          ),
-          actions: [
-            Icon(Icons.settings),
-            SizedBox(
-              width: 20,
-            ),
-            Icon(Icons.edit),
-            SizedBox(
-              width: 10,
-            ),
-          ],
-        ),
-        body: Center(
-          child: Column(
-            children: [
-              Text("Hello World!"),
-              ElevatedButton(onPressed: () {}, child: Text("Click Me!"))
-            ],
-          ),
-        ),
-        // body: buidCardAndroidVersion(androidVersions: androidVersions),
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.plus_one),
-          onPressed: () {},
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          currentIndex: 0,
-          items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.mark_email_unread), label: 'Messages'),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.settings), label: 'Settings'),
-          ],
-        ),
-      ),
+      home: new MainHome(),
     );
   }
 }

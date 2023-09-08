@@ -1,1 +1,5 @@
 getpagevoid - snippet new page
+
+http://10.0.2.2:8000/api/kategori-list
+
+Navigator.pushNamed(context, 'login');
