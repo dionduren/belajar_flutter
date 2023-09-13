@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:belajar_flutter/pages/first_page.dart';
 import 'package:belajar_flutter/pages/second_page.dart';
+import 'package:belajar_flutter/pages/third_page.dart';
 
 class MainHome extends StatelessWidget {
   const MainHome({
@@ -59,6 +60,18 @@ class MainHome extends StatelessWidget {
                   );
                 },
                 child: Text("Buat Tiket Baru - Test 2"),
+              ),
+            ),
+            FractionallySizedBox(
+              widthFactor: 0.8,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ThirdPage()),
+                  );
+                },
+                child: Text("Buat Tiket Baru - Test 3"),
               ),
             )
           ],
